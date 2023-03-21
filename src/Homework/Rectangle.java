@@ -1,21 +1,19 @@
 package Homework;
 public class Rectangle implements Shape{
-    int perimeter;
-    int a;
-    int b;
-    int area;
-    public Rectangle(int a, int b) {
-        this.perimeter = 0;
-        this.a = a;
-        this.b = b;
-        this.area = 0;
+
+    int width;
+    int length;
+
+    public Rectangle(int length, int width) {
+        this.width = width;
+        this.length = length;
     }
     public double findArea() {
-        area=a*b;
-        return area;
+
+        return width*length;
     }
     public double findPerimeter() {
-        perimeter=2*(a+b);
-        return perimeter;
+
+        return 2*(width+length);
     }
 }
